@@ -12,6 +12,7 @@ public class LoginPage extends Page {
         PageFactory.initElements(driver, this);
     }
 
+    //New User SignUp
     @FindBy (name = "name")
     private WebElement nameRegisterInput;
 
@@ -31,5 +32,27 @@ public class LoginPage extends Page {
 
     public WebElement getRegisterBtn(){
         return this.findElement(registerBtn);
+    }
+
+    //Login to your account
+    @FindBy (xpath = "//input[@data-qa = 'login-email']")
+    private WebElement emailLoginInput;
+
+    @FindBy (name = "password")
+    private WebElement passwordInput;
+
+    @FindBy (xpath = "//button[@data-qa = 'login-button']")
+    private WebElement loginBtn;
+
+    public WebElement getEmailLoginInput(){
+        return this.findElement(emailLoginInput);
+    }
+
+    public WebElement getPasswordInput(){
+        return this.findElement(passwordInput);
+    }
+
+    public WebElement getLoginBtn(){
+        return this.findElement(loginBtn);
     }
 }

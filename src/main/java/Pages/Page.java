@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
+import java.io.File;
 import java.rmi.UnexpectedException;
 import java.time.Duration;
 import java.util.function.Function;
