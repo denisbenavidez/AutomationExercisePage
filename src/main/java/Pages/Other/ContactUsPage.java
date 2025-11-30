@@ -1,4 +1,4 @@
-package Pages.ContactUs;
+package Pages.Other;
 
 import Pages.Page;
 import org.openqa.selenium.Alert;

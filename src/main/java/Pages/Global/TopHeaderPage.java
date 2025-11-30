@@ -12,8 +12,17 @@ public class TopHeaderPage extends Page {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy (className = "card_travel")
+    private WebElement productsBtn;
+
+    @FindBy (className = "fa-shopping-cart")
+    private WebElement cartBtn;
+
     @FindBy(className = "fa-lock")
     private WebElement signUpLoginBtn;
+
+    @FindBy(className = "fa-list")
+    private WebElement testCasesBtn;
 
     @FindBy(className = "fa-lock") //btn cerra sesion
     private WebElement logoutBtn;
@@ -27,9 +36,20 @@ public class TopHeaderPage extends Page {
     @FindBy(className = "fa-envelope")
     private WebElement contactUsBtn;
 
+    public WebElement getProductsBtn(){
+        return this.findElement(productsBtn);
+    }
+
+    public WebElement getCartBtn(){
+        return this.findElement(cartBtn);
+    }
 
     public WebElement getSignUpLoginBtn(){
         return this.findElement(signUpLoginBtn);
+    }
+
+    public WebElement getTestCasesBtn(){
+        return this.findElement(testCasesBtn);
     }
 
     public WebElement getLogoutBtn(){

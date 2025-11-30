@@ -1,6 +1,6 @@
 package Smoke;
 
-import Pages.ContactUs.ContactUsPage;
+import Pages.Other.ContactUsPage;
 import Pages.Global.TopHeaderPage;
 import TestCaseImplements.TestCase;
 import org.testng.Assert;
